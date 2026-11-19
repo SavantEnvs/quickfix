@@ -1,0 +1,9 @@
+project: savantenvs/quickfix
+target: fuzz_datadictionary
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_datadictionary/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_datadictionary
+    libfuzzer: true
+    timeout: 10

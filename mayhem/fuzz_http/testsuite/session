@@ -1,0 +1,2 @@
+GET /session?BeginString=FIX.4.2&SenderCompID=TW&TargetCompID=ISLD HTTP/1.1
+
